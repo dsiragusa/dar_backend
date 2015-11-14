@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(name="test", method="post", action="/schedule")
+    input(type="text", name="id")
+    input(type="text", name="timeout")
+    input(type="text", name="code")
+    input(type="text", name="oldCode")
+    input(type="submit")
